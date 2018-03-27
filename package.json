@@ -8,6 +8,7 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
+    "lh": "lighthouse-ci",
     "e2e": "ng e2e"
   },
   "private": true,
@@ -46,6 +47,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "~1.1.0",
     "karma-jasmine-html-reporter": "^0.2.2",
+    "lighthouse-ci": "git+https://github.com/ebidel/lighthouse-ci.git",
     "protractor": "~5.1.2",
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
