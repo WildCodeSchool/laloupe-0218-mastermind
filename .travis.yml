@@ -3,5 +3,7 @@ node_js:
   - "9"
 
 script:
-  - npm run lint
-  - ./deploy.sh
+  - npm run lint:js
+  - npm run lint:html
+  - npm run lint:style
+  - bash deploy.sh
