@@ -17,7 +17,6 @@ export class Test1Component implements OnInit {
   ngOnInit() {
   }
 myMethod () {
-  console.log("OK");
-  
+  console.log('OK');
 }
 }
