@@ -22,6 +22,7 @@ import { Test1Component } from './test1/test1.component';
 import { routes } from './app.routes';
 import { LoginComponent } from './login/login.component';
 import { RulesComponent } from './rules/rules.component';
+
 @NgModule({
   declarations: [
     AppComponent,
