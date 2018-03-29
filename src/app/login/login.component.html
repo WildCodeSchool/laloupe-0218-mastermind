@@ -1,0 +1,17 @@
+<html>
+  <body>
+
+<div class="login_design">
+    <h1>Welcome to the login page</h1>
+<div *ngIf="afAuth.authState | async as user; else showLogin">
+  <h1>Hello {{ user.displayName }}!</h1>
+  <button class="btn-si-logout" (click)="logout()" aria-label="logout">Logout</button>
+</div>
+<ng-template #showLogin>
+  <p>Please login.</p>
+  <button class="btn-si btn-google" (click)="login()" aria-label="login"></button>
+</ng-template>
+</div>
+
+</body>
+</html>
