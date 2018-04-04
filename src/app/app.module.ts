@@ -22,6 +22,7 @@ import { Test1Component } from './test1/test1.component';
 import { routes } from './app.routes';
 import { LoginComponent } from './login/login.component';
 import { RulesComponent } from './rules/rules.component';
+import { RouterLinkActive } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,7 @@ import { RulesComponent } from './rules/rules.component';
     AngularFireAuthModule,
     AngularFireStorageModule,
     BrowserAnimationsModule,
-    routes
+    routes,
   ],
   providers: [],
   bootstrap: [AppComponent]
