@@ -14,10 +14,10 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment } from '../environments/environment';
 import { Observable } from 'rxjs/Observable';
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import 'hammerjs';
-import { Test1Component } from './test1/test1.component';
+
 
 import { routes } from './app.routes';
 import { LoginComponent } from './login/login.component';
@@ -27,7 +27,6 @@ import { RouterLinkActive } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
-    Test1Component,
     LoginComponent,
     RulesComponent
   ],
