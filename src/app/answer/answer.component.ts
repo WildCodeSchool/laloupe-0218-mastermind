@@ -12,7 +12,7 @@ import { routes, router } from '../app.routes';
 export class AnswerComponent implements OnInit {
 
   answerRay = [];
-  txt = "";
+  txt = '';
 
   constructor(private dataservice: DataService, private router: Router) {}
 
@@ -60,7 +60,7 @@ export class AnswerComponent implements OnInit {
 
     if (this.checkForWin(gradeRay)) {
       this.dataservice.youWin = true;
-      alert("You won ! Congratulations !");
+      alert('You won ! Congratulations !');
     }
 
   console.log(gradeRay);
@@ -91,12 +91,12 @@ export class AnswerComponent implements OnInit {
   } */
 
   checkForWin(ray) {
-    if(ray.length !== 4) {
+    if (ray.length !== 4) {
       return false;
     }
-    if(ray[0] == ['black'] && ray[1] == ['black'] && ray[2] == ['black'] && ray[3] == ['black']) {
+    if (ray[0] === ['black'] && ray[1] === ['black'] && ray[2] === ['black'] && ray[3] === ['black']) {
       return true;
-    } 
+    }
     return false;
   }
 }

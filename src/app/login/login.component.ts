@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   authenticated = false;
 
 
-  constructor(public afAuth: AngularFireAuth, private router: Router) { 
+  constructor(public afAuth: AngularFireAuth, private router: Router) {
 
     this.afAuth.authState.subscribe(
       (auth) => {

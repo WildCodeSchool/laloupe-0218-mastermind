@@ -32,15 +32,15 @@ export class MatchmakingComponent implements OnInit {
         let roomId = snapshotItem.payload.doc.id;
         let room = snapshotItem.payload.doc.data() as Room;
 
-        if(room.players.length == 1) {
+        if (room.players.length === 1) {
           let player = new Player();
-          player.name = "user" + Math.floor(Math.random() * 1000);
+          player.name = 'user' + Math.floor(Math.random() * 1000);
           room.players.push(player);
-          this.db.doc("rooms/" + roomId).update(JSON.parse(JSON.stringify(room)));
-         // this.router.navigate("board", roomId, player.name);
+          this.db.doc('rooms/' + roomId).update(JSON.parse(JSON.stringify(room)));
+         // this.router.navigate('board', roomId, player.name);
           break;
         }
       }
-    });  
+    });
   }
 }

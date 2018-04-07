@@ -11,7 +11,7 @@ import { routes, router } from '../app.routes';
 })
 export class PegTrayComponent implements OnInit {
 
-  selectedColor ='';
+  selectedColor = '';
 
   constructor(private dataservice: DataService) { }
 
@@ -22,7 +22,7 @@ export class PegTrayComponent implements OnInit {
 
     this.dataservice.selectedColor = col;
 
-    for(let j=0; j < 6; j++) {
+    for (let j = 0; j < 6; j++) {
       document.getElementById(`outer-peg-${j}`).style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
     }
 
