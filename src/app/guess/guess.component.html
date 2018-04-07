@@ -1,0 +1,15 @@
+<div class="wrapper box-me guess flexer">
+  <div class="flexer guess-peg-container box-me">
+    <div class="circle box-me guess-peg" 
+         *ngFor="let peg of pegs"
+         (click)="colorMe(guess, peg)" 
+         id = "peg-{{guess}}-{{peg}}">
+    </div>
+  </div>
+  <div class="flexer grade-peg-container box-me">
+      <div class="circle box-me grade-peg"
+           *ngFor="let peg of pegs"
+           id = "gradePeg-{{guess}}-{{peg}}"
+           ></div>
+  </div>
+</div>

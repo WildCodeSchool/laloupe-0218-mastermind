@@ -1,0 +1,12 @@
+.board {
+    box-sizing: border-box;
+    width: 40%;
+    min-width: 380px;
+    max-width: 450px;
+    height: 95vh;
+    min-height: 600px;
+    box-shadow: 2px 2px 2px 5px black;
+    border-radius: 3px;
+    margin: 2.5px auto;
+    background: linear-gradient(rgba(20, 20, 200, 1), rgba(20, 20, 200, 0.5));
+}

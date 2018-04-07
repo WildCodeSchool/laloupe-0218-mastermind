@@ -27,6 +27,14 @@ import { MatchmakingComponent } from './matchmaking/matchmaking.component';
 import { Routes, RouterModule } from '@angular/router';
 import { routes, router } from './app.routes';
 import 'rxjs/Rx';
+import { AnswerComponent } from './answer/answer.component';
+import { BoardComponent } from './board/board.component';
+import { GuessComponent } from './guess/guess.component';
+import { GuessesComponent } from './guesses/guesses.component';
+import { PegTrayComponent } from './peg-tray/peg-tray.component';
+import { WinnerComponent } from './winner/winner.component';
+import { DataService } from './data.service';
+
 
 
 @NgModule({
@@ -34,7 +42,13 @@ import 'rxjs/Rx';
     AppComponent,
     LoginComponent,
     RulesComponent,
-    MatchmakingComponent
+    MatchmakingComponent,
+    AnswerComponent,
+    BoardComponent,
+    GuessComponent,
+    GuessesComponent,
+    PegTrayComponent,
+    WinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +60,7 @@ import 'rxjs/Rx';
     RouterModule.forRoot(router),
     routes
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

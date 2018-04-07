@@ -1,0 +1,10 @@
+<div class="wrapper box-me peg-tray flexer">
+  <div class="guess-peg-outer box-me circle" id="outer-peg-{{i}}" *ngFor="let color of dataservice.colors; let i = index" (click)="selectColor(color, i)">
+    <div class="guess-peg-inner box-me circle {{color}}">
+
+    </div>
+  </div>
+</div>
+
+
+

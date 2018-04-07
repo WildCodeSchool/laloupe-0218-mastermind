@@ -1,0 +1,23 @@
+.peg-tray {
+    box-sizing: border-box;
+    width: 100%;
+    height: 10vh;
+}
+
+.guess-peg-outer {
+    width: 16%;
+    box-sizing: border-box;
+    margin: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.guess-peg-inner {
+    width: 80%;
+    height: 80%;
+    margin: 10% auto;
+    box-sizing: border-box;
+}
+
+.guess-peg-outer:hover,.guess-peg-inner:hover {
+    border: 1px solid white;
+}
