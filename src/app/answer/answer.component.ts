@@ -61,9 +61,10 @@ export class AnswerComponent implements OnInit {
     if (this.checkForWin(gradeRay)) {
       this.dataservice.youWin = true;
       alert('You won ! Congratulations !');
+      this.router.navigate(['rules']);
     }
 
-  console.log(gradeRay);
+    console.log(gradeRay);
     console.log(this.checkForWin(gradeRay));
     console.log(this.dataservice.youWin);
 
@@ -94,7 +95,7 @@ export class AnswerComponent implements OnInit {
     if (ray.length !== 4) {
       return false;
     }
-    if (ray[0] === ['black'] && ray[1] === ['black'] && ray[2] === ['black'] && ray[3] === ['black']) {
+    if (ray[0] === 'black' && ray[1] === 'black' && ray[2] === 'black' && ray[3] === 'black') {
       return true;
     }
     return false;

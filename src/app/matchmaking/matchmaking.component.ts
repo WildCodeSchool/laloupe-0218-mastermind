@@ -37,7 +37,7 @@ export class MatchmakingComponent implements OnInit {
           player.name = 'user' + Math.floor(Math.random() * 1000);
           room.players.push(player);
           this.db.doc('rooms/' + roomId).update(JSON.parse(JSON.stringify(room)));
-         // this.router.navigate('board', roomId, player.name);
+          this.router.navigate(['board', roomId, player.name]);
           break;
         }
       }
