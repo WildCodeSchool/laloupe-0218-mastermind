@@ -17,6 +17,7 @@ export class AnswerComponent implements OnInit {
   constructor(private dataservice: DataService, private routerAnswer: Router) {}
 
 
+  // Initialisation of the combination to guess
   ngOnInit() {
     for (let i = 0; i < 4; i++) {
       this.answerRay.push(Math.floor(Math.random() * 6));
@@ -36,6 +37,7 @@ export class AnswerComponent implements OnInit {
     const tempGuessRay = this.copyRay(this.dataservice.guessArray);
     const tempAnswerRay = this.copyRay(this.answerRay);
 
+    // Returns black peg in case of a right answer for a colored peg
     this.answerRay.forEach((peg, i) => {
       if (peg === tempGuessRay[i]) {
         gradeRay.push('black');
@@ -44,6 +46,7 @@ export class AnswerComponent implements OnInit {
       }
     });
 
+    // returns white peg if color of a peg corresponds but the location is different
     tempAnswerRay.forEach((answerPeg, i) => {
       tempGuessRay.forEach((guessPeg, j) => {
         if (answerPeg === guessPeg) {
@@ -58,6 +61,8 @@ export class AnswerComponent implements OnInit {
       document.getElementById(`gradePeg-${this.dataservice.activeGuess}-${i}`).style.backgroundColor = col;
     });
 
+
+    // Checks if the guess corresponds to the combination
     if (this.checkForWin(gradeRay)) {
       this.dataservice.youWin = true;
       alert('You won ! Congratulations !');

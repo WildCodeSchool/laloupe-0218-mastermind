@@ -1,3 +1,5 @@
+// Contains the different components for the game
+
 import { Component, OnInit } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { Router } from '@angular/router';

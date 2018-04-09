@@ -18,6 +18,7 @@ export class PegTrayComponent implements OnInit {
   ngOnInit() {
   }
 
+  // color of outer pegs
   selectColor(col, i) {
 
     this.dataservice.selectedColor = col;
