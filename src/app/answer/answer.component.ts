@@ -13,8 +13,11 @@ export class AnswerComponent implements OnInit {
 
   answerRay = [];
   txt = '';
+  dataservice;
 
-  constructor(dataservice: DataService, private routerAnswer: Router) {}
+  constructor(dataservice: DataService, private routerAnswer: Router) {
+    this.dataservice = dataservice;
+  }
 
 
   // Initialisation of the combination to guess
