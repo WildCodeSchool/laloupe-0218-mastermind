@@ -83,19 +83,6 @@ export class AnswerComponent implements OnInit {
     return rayNew;
   }
 
-/*
-
-  checkForWin(ray) {
-    if (ray.length !== 4) {
-      return false;
-    }
-    ray.forEach((unit) => {
-      if (unit == 'black') {
-        return true;
-      }
-    });
-  } */
-
   checkForWin(ray) {
     if (ray.length !== 4) {
       return false;

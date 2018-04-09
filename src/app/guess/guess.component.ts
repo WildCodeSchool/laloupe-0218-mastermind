@@ -33,7 +33,8 @@ export class GuessComponent implements OnInit {
       this.coloredPegCounter++;
      this.dataservice.guessArray[peg] = this.dataservice.colors.indexOf(this.dataservice.selectedColor);
 
-      if (this.coloredPegCounter === 4) { /* Requirements to display the submit button*/
+     // Requirements to display the submit button
+      if (this.coloredPegCounter === 4) {
       this.dataservice.showBtn = true;
       } else if (this.dataservice.selectedColor !== ''
           && currentColor !== ''
