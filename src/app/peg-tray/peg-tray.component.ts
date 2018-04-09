@@ -12,8 +12,11 @@ import { routes, router } from '../app.routes';
 export class PegTrayComponent implements OnInit {
 
   selectedColor = '';
+  dataservice;
 
-  constructor(private dataservice: DataService) { }
+  constructor(dataservice: DataService) {
+    this.dataservice = dataservice;
+   }
 
   ngOnInit() {
   }

@@ -15,7 +15,7 @@ export class GuessesComponent implements OnInit {
   // Lines on the board
   guesses = [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0];
 
-  constructor(private dataservice: DataService) { }
+  constructor(dataservice: DataService) { }
 
   ngOnInit() {
   }
