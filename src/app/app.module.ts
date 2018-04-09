@@ -26,7 +26,7 @@ import { RouterLinkActive } from '@angular/router';
 import { MatchmakingComponent } from './matchmaking/matchmaking.component';
 import { Routes, RouterModule } from '@angular/router';
 import { routes, router } from './app.routes';
-import 'rxjs/Rx';
+
 import { AnswerComponent } from './answer/answer.component';
 import { BoardComponent } from './board/board.component';
 import { GuessComponent } from './guess/guess.component';

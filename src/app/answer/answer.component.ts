@@ -14,7 +14,7 @@ export class AnswerComponent implements OnInit {
   answerRay = [];
   txt = '';
 
-  constructor(private dataservice: DataService, private router: Router) {}
+  constructor(private dataservice: DataService, private routerAnswer: Router) {}
 
 
   ngOnInit() {
@@ -32,9 +32,9 @@ export class AnswerComponent implements OnInit {
   }
 
   compareArrays = () => {
-    let gradeRay = [];
-    let tempGuessRay = this.copyRay(this.dataservice.guessArray);
-    let tempAnswerRay = this.copyRay(this.answerRay);
+    const gradeRay = [];
+    const tempGuessRay = this.copyRay(this.dataservice.guessArray);
+    const tempAnswerRay = this.copyRay(this.answerRay);
 
     this.answerRay.forEach((peg, i) => {
       if (peg === tempGuessRay[i]) {
@@ -61,7 +61,7 @@ export class AnswerComponent implements OnInit {
     if (this.checkForWin(gradeRay)) {
       this.dataservice.youWin = true;
       alert('You won ! Congratulations !');
-      this.router.navigate(['rules']);
+      this.routerAnswer.navigate(['']);
     }
 
     console.log(gradeRay);
@@ -71,7 +71,7 @@ export class AnswerComponent implements OnInit {
   }
 
   copyRay(rayOld) {
-    let rayNew = [];
+    const rayNew = [];
     rayOld.forEach((item) => {
       rayNew.push(item);
     });

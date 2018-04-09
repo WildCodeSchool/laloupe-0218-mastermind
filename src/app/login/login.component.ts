@@ -4,7 +4,7 @@ import * as firebase from 'firebase/app';
 import { Routes, RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 import { routes, router } from '../app.routes';
-import { Observable } from '@firebase/util/dist/esm/src/subscribe';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-login',
@@ -17,13 +17,14 @@ export class LoginComponent implements OnInit {
   authenticated = false;
 
 
-  constructor(public afAuth: AngularFireAuth, private router: Router) {
+  constructor(public afAuth: AngularFireAuth, private routerLogin: Router) {
 
     this.afAuth.authState.subscribe(
       (auth) => {
         if (auth != null) {
+          this.user = afAuth.authState;
           this.authenticated = true;
-          this.router.navigate(['matchmaking']);
+          this.routerLogin.navigate(['matchmaking']);
         }
       }
     );

@@ -25,7 +25,7 @@ export class GuessComponent implements OnInit {
 
   colorMe(guess, peg) {
     if (guess === this.dataservice.activeGuess) {
-      let currentColor = document.getElementById(`peg-${guess}-${peg}`).style.backgroundColor;
+      const currentColor = document.getElementById(`peg-${guess}-${peg}`).style.backgroundColor;
 
       if (this.dataservice.selectedColor !== ''
         && currentColor === '') {

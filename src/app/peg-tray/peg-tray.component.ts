@@ -26,7 +26,7 @@ export class PegTrayComponent implements OnInit {
       document.getElementById(`outer-peg-${j}`).style.backgroundColor = 'rgba(255, 255, 255, 0.3)';
     }
 
-    let id = `outer-peg-${i}`;
+    const id = `outer-peg-${i}`;
     document.getElementById(`outer-peg-${i}`).style.backgroundColor = col;
   }
 }
