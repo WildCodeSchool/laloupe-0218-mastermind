@@ -20,8 +20,8 @@ export class GameService {
   }
 
   won() {
-    let username = this.authService.username;
-    if (this.room.players[0].name == username) {
+    const username = this.authService.username;
+    if (this.room.players[0].name === username) {
       this.room.players[0].won = true;
     } else {
       this.room.players[1].won = true;

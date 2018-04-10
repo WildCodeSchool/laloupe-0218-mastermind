@@ -48,7 +48,7 @@ export class MatchmakingComponent implements OnInit {
       newRoom.combination = [];
       let i = 0;
       while (i < 4) {
-        newRoom.combination.push(Math.floor(Math.random() * 6))
+        newRoom.combination.push(Math.floor(Math.random() * 6));
         i++;
       }
       newRoom.players = [player];

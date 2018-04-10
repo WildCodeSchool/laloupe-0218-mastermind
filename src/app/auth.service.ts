@@ -8,7 +8,6 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class AuthService {
 
- 
   user: Observable<firebase.User>;
   authenticated = false;
   username: string;
