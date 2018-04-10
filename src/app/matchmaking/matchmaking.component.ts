@@ -27,19 +27,28 @@ export class MatchmakingComponent implements OnInit {
     const roomCollection = this.db.collection<Room>('rooms');
 
     const snapshot = roomCollection.snapshotChanges().subscribe(snapshot1 => {
+      const player = new Player();
+      player.name = 'user' + Math.floor(Math.random() * 1000);
       for (const snapshotItem of snapshot1) {
         const roomId = snapshotItem.payload.doc.id;
         const room = snapshotItem.payload.doc.data() as Room;
 
         if (room.players.length === 1) {
-          const player = new Player();
-          player.name = 'user' + Math.floor(Math.random() * 1000);
+
           room.players.push(player);
           this.db.doc('rooms/' + roomId).update(JSON.parse(JSON.stringify(room)));
           this.routerMatchmaking.navigate(['board', roomId, player.name]);
           break;
         }
       }
+
+      const newRoom = new Room();
+      newRoom.players = [player];
+      this.db.collection('rooms')
+        .add(JSON.parse(JSON.stringify(newRoom)))
+        .then((doc) => {
+          this.routerMatchmaking.navigate(['game', doc.id]);
+        });
     });
   }
 }
