@@ -1,5 +1,7 @@
 # Page
 
+This game (still under construction) is aimed at being a 2 player version of the infamous Mastermind game.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
 ## Development server

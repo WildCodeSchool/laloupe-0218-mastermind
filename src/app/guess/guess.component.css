@@ -1,0 +1,26 @@
+.guess {
+    box-sizing: border-box;
+    height: 8.35%;
+}
+
+.guess-peg-container {
+    height: 100%;
+    width: 75%;
+}
+
+.grade-peg-container {
+    width: 25%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.guess-peg {
+    width: 25%;
+}
+
+.grade-peg {
+    box-sizing: border-box;
+    width: 45%;
+    height: 45%;
+    margin: 0 auto;
+}

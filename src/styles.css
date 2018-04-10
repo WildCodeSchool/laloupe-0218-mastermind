@@ -1,2 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+    height: 98vh;
+    background: rgb(250, 250, 250)
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.flexer {
+    display: flex;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box-me {
+    border: 1px solid black;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.black {
+    background-color: black;
+}
+
+.purple {
+    background-color: purple;
+}
+
