@@ -4,7 +4,7 @@
   <div class="container">
     <div class="login_design ml-4">
       <h1>Welcome to the login page</h1>
-      <div *ngIf="afAuth.authState | async as user; else showLogin">
+      <div *ngIf="authService.afAuth.authState | async as user; else showLogin">
         <h1>Hello {{ user.displayName }}!</h1>
         <button class="btn-si-logout" (click)="logout()" aria-label="logout">Logout</button>
       </div>

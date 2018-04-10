@@ -13,7 +13,7 @@ export const router: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'rules', component: RulesComponent },
     { path: 'matchmaking', component: MatchmakingComponent },
-    {path: 'board', component: BoardComponent }
+    {path: 'board/:id/:username', component: BoardComponent }
 ];
 
 
