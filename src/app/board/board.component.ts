@@ -19,7 +19,10 @@ export class BoardComponent implements OnInit {
   roomId: string;
   username: string;
 
-  constructor(private db: AngularFirestore, private route: ActivatedRoute, private gameService: GameService, private authService: AuthService) { }
+  constructor(private db: AngularFirestore,
+              private route: ActivatedRoute,
+              private gameService: GameService,
+              private authService: AuthService) { }
 
   ngOnInit() {
     this.roomId = this.route.snapshot.paramMap.get('id');

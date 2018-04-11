@@ -66,6 +66,7 @@ export class AnswerComponent implements OnInit {
 
 
     // Checks if the guess corresponds to the combination
+
     if (this.checkForWin(gradeRay)) {
       this.dataservice.youWin = true;
       this.gameService.won();
@@ -97,5 +98,6 @@ export class AnswerComponent implements OnInit {
     return false;
   }
 }
+
 
 
