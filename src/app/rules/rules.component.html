@@ -23,4 +23,12 @@
 
 </div>
 </div>
-<!-- jjj -->
+
+<div class="container">
+    <div class="login_design ml-4">
+      <div *ngIf="authService.afAuth.authState | async as user; else showLogin">
+        <h1>Hello {{ user.displayName }}! Click the button below to logout.</h1>
+        <button class="btn-si-logout" (click)="logout()" aria-label="logout">Logout</button>
+      </div>
+    </div>
+  </div>

@@ -9,7 +9,7 @@ export class GameService {
   room: Room;
   roomId: string;
 
-  constructor(private db: AngularFirestore, private authService: AuthService) {}
+  constructor(private db: AngularFirestore, private authService: AuthService) { }
 
   initGame(roomId: string) {
     this.roomId = roomId;
