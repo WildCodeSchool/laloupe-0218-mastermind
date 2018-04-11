@@ -1,1 +1,25 @@
 /*test*/
+
+@font-face {
+  font-family: "Iceland";
+  src: url("https://fonts.googleapis.com/css?family=Iceland|Bungee");
+}
+
+.rules {
+  color: white;
+  font-size: 1em;
+  margin: 2em;
+  text-align: justify;
+}
+
+.gamerules {
+  font-family: "Bungee";
+}
+
+.goodluck {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  font-family: "Bungee";
+  margin-top: 2em;
+}

@@ -1,3 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@font-face {
+  font-family: "Audiowide";
+  src: url("https://fonts.googleapis.com/css?family=Audiowide");
+}
+
+body {
+  background-image: url('./assets/screen.jpg');
+  background-repeat: no-repeat;
+  background-size: 1600px 800px;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 10px;
+}
