@@ -32,3 +32,15 @@ body {
   transform: translate(-50%);
   }
 
+  .logoutBtn {
+    position: absolute;
+    right: 5%;
+    top: 2.5%;
+    border-radius: 7px;
+    border: none;
+    background-color: black;
+    font-size: 1.5em;
+    font-family: "Audiowide", sans-serif;
+    color: white;
+}
+
