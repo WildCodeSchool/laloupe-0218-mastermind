@@ -72,7 +72,7 @@ export class AnswerComponent implements OnInit {
       this.gameService.won();
       alert('You won ! Congratulations !');
       this.routerAnswer.navigate(['']);
-    }
+  }
 
     console.log(gradeRay);
     console.log(this.checkForWin(gradeRay));

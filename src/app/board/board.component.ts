@@ -22,7 +22,8 @@ export class BoardComponent implements OnInit {
   constructor(private db: AngularFirestore,
               private route: ActivatedRoute,
               private gameService: GameService,
-              private authService: AuthService) { }
+              private authService: AuthService,
+              private routerBoard: Router) { }
 
   ngOnInit() {
     this.roomId = this.route.snapshot.paramMap.get('id');
@@ -32,5 +33,6 @@ export class BoardComponent implements OnInit {
 
   logout() {
     this.authService.logout();
+    this.routerBoard.navigate(['login']);
   }
 }
