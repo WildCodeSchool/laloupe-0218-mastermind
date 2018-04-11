@@ -1,58 +1,34 @@
 body {
   height: 100%;
   text-align: center;
-}
-
-.login_design {
-  width: 500px;
-  background-color: #CCC;
+  }
+  
+  h1 {
+  color: white;
+  font-size: 1.5em;
+  font-family: "Audiowide", sans-serif;
+  margin-top: 1.5em;
+  }
+  
+ .googlebutton {
+  height: 80px;
+  width: 80px;
+  } 
+  
+  button {
+  border: none;
+  background: transparent;
+  }
+  
+  button:hover {
+  cursor: pointer;
+  }
+  
+  .rounded-circle {
+  margin-top: 4em;
   position: absolute;
-  top: 50%;
-  left: 30%;
-  padding: 20px;
-  border-radius: 10px;
-}
+  bottom: 200px;
+  left: 50%;
+  transform: translate(-50%);
+  }
 
-.btn-google {
-  background-color: #dd4b39;
-  background-image: url("http://vagnersantana.com/social-signin-btns/img/google.svg");
-}
-
-.btn-si {
-  background-position: 1em;
-  background-repeat: no-repeat;
-  background-size: 2em;
-  border-radius: 2em;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 1em;
-  height: 4em;
-  line-height: 1em;
-  padding: 0 2em 0 2em;
-  text-decoration: none;
-  transition: all 0.5s;
-}
-
-.btn-google:hover {
-  box-shadow: black 8px 8px 0px;
-}
-
-.btn-si-logout {
-  background-color: #dd4b39;
-  background-size: 2em;
-  border-radius: 2em;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 1em;
-  height: 4em;
-  line-height: 1em;
-  text-decoration: none;
-  transition: all 0.5s;
-  text-align: center;
-}
-
-.btn-si-logout:hover {
-  box-shadow: black 8px 8px 0px;
-}

@@ -49,3 +49,20 @@ body {
     background-color: purple;
 }
 
+body {
+    background-image: url('https://i.ytimg.com/vi/w8ndrYXBXT4/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-size: 1300px 800px;
+}
+
+@font-face {
+    font-family: "Audiowide";
+    src: url("https://fonts.googleapis.com/css?family=Audiowide");
+    } 
+
+
+.logo {
+    text-align: center;
+    margin-top: 10px;
+    }
+
