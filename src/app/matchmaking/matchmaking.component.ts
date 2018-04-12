@@ -40,7 +40,7 @@ export class MatchmakingComponent implements OnInit {
           room.players.push(player);
           this.db.doc('rooms/' + roomId).update(JSON.parse(JSON.stringify(room)));
           this.routerMatchmaking.navigate(['board', roomId, player.name]);
-          break;
+          return;
         }
       }
 
