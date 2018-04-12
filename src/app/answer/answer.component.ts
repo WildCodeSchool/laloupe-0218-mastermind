@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../data.service';
 import { Routes, RouterModule } from '@angular/router';
 import { Router } from '@angular/router';
 import { routes, router } from '../app.routes';
+import { BoardComponent } from '../board/board.component';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-answer',
@@ -15,16 +17,14 @@ export class AnswerComponent implements OnInit {
   txt = '';
   dataservice;
 
-  constructor(dataservice: DataService, private routerAnswer: Router) {
+  constructor(dataservice: DataService, private routerAnswer: Router, private gameService: GameService) {
     this.dataservice = dataservice;
   }
 
 
   // Initialisation of the combination to guess
   ngOnInit() {
-    for (let i = 0; i < 4; i++) {
-      this.answerRay.push(Math.floor(Math.random() * 6));
-    }
+    this.answerRay = this.gameService.room.combination;
     console.log(this.answerRay);
   }
 
@@ -66,11 +66,11 @@ export class AnswerComponent implements OnInit {
 
 
     // Checks if the guess corresponds to the combination
+
     if (this.checkForWin(gradeRay)) {
       this.dataservice.youWin = true;
-      alert('You won ! Congratulations !');
-      this.routerAnswer.navigate(['']);
-    }
+      this.gameService.won();
+  }
 
     console.log(gradeRay);
     console.log(this.checkForWin(gradeRay));
@@ -96,5 +96,6 @@ export class AnswerComponent implements OnInit {
     return false;
   }
 }
+
 
 

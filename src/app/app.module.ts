@@ -34,6 +34,8 @@ import { GuessesComponent } from './guesses/guesses.component';
 import { PegTrayComponent } from './peg-tray/peg-tray.component';
 import { WinnerComponent } from './winner/winner.component';
 import { DataService } from './data.service';
+import { GameService } from './game.service';
+import { AuthService } from './auth.service';
 
 
 
@@ -60,7 +62,13 @@ import { DataService } from './data.service';
     RouterModule.forRoot(router),
     routes
   ],
-  providers: [DataService],
-  bootstrap: [AppComponent]
+  providers: [
+    DataService,
+    GameService,
+    AuthService
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }

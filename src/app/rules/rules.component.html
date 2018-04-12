@@ -1,26 +1,22 @@
-<div class="container-fluid">
-<div class="row d-flex flex-wrap">
 
-
-<h1>Mastermind</h1>
-
-<p>A player begins by placing his choice of pawns without being seen by the other player in the back of a cache that will hide them at the sight of it until the end of the round.</p>
-
-<p>The player who did not select the pawns must find the four pawns, ie their colors and positions.</p>
-
-<p>For this, at each turn, the player must use pieces to fill a row according to the idea that it is made of hidden pawns.</p>
-
-<p>Once the pieces are placed, the other player indicates:</p>
-
-<p>- the number of well colored pawns in the right place using the same number of black pawns;<br>
-- the number of pawns of the right color, but misplaced, with the white pawns.</p>
-
-<p>It happens therefore especially at the beginning of the game that it does not do anything concretely and that it does not have to say that no pion corresponds, in color or in color and position.</p>
-
-<p>The tactic of the active player is to select according to previous moves, colors and positions, so as to obtain the maximum information of the partner's response since the number of proposals is limited by the number of rows of holes in the game. in most cases, it tries to get as close as possible to the solution, taking into account the previous answers, but it can also form a combination for the sole purpose of verifying part of the conclusions of the previous moves and to make accordingly the most suitable proposal for the deduction of new information.</p>
-
-<p>The player wins this round if he gives the right combination of pieces on the last row or before. In all cases, it is his turn to choose the pieces to discover.</p>
-
-</div>
-</div>
-<!-- jjj -->
+<div class="container">
+  <div class="login_design ml-4">
+    <div *ngIf="authService.afAuth.authState | async as user">
+      <button class="btn-si-logout logoutBtn" (click)="logout()" aria-label="logout">Logout</button>
+    </div>
+  </div>
+</div><div class="container-fluid">
+  <div class="row d-flex flex-wrap">
+  
+  <div class="rules">
+  <p class="gamerules">
+  The object of MASTERMIND is to guess a secret code consisting of a series of 4 colored pegs. Each guest results in feedback
+  (white for a peg with the right color at the wrong location and black for a correctly placed and colored peg) narrowing
+  down the possibilities of the code.</p>
+  <p class="gamerules">For this slightly altered version of the game, 2 players will have to play simultaneously, and the first one to guess
+  the secret code will be declared winner of the game.
+  </p>
+  </div>
+  </div>
+  </div>
+  <p class="goodluck">Good luck !</p>

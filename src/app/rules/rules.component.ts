@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-rules',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RulesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public authService: AuthService, private routerRules: Router) {}
 
   ngOnInit() {
   }
 
+  logout() {
+    this.authService.logout();
+    this.routerRules.navigate(['login']);
+  }
+
+  alerte() {
+    alert('Please login again if you want to play');
+  }
 }
