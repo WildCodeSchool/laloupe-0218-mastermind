@@ -21,8 +21,8 @@ export class BoardComponent implements OnInit {
 
   constructor(private db: AngularFirestore,
               private route: ActivatedRoute,
-              private gameService: GameService,
-              private authService: AuthService,
+              public gameService: GameService,
+              public authService: AuthService,
               private routerBoard: Router) { }
 
   ngOnInit() {
