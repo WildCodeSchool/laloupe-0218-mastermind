@@ -70,8 +70,6 @@ export class AnswerComponent implements OnInit {
     if (this.checkForWin(gradeRay)) {
       this.dataservice.youWin = true;
       this.gameService.won();
-      alert('You won ! Congratulations !');
-      this.routerAnswer.navigate(['']);
   }
 
     console.log(gradeRay);

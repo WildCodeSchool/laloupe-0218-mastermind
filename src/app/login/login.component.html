@@ -8,7 +8,7 @@
     <div class="login_design ml-4">
       <h1>Log with Google to play !</h1>
       <div *ngIf="authService.afAuth.authState | async as user; else showLogin">
-        <h1>Thanks for your visit {{ user.displayName }}</h1>
+        <h1>Thanks for your visit {{ user.displayName }}<br>Please logout and login to play again.</h1>
         <button class="btn-si-logout logoutBtn" (click)="logout()" aria-label="logout">Logout</button>
       </div>
     </div>
