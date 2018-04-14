@@ -1,14 +1,13 @@
 .board {
     box-sizing: border-box;
-    width: 30%;
+    width: 25%;
     min-width: 380px;
-    max-width: 450px;
-    height: 85vh;
-    min-height: 600px;
+
+    max-height: 568px;
     box-shadow: 2px 2px 2px 5px black;
     border-radius: 3px;
     margin: 2.5px auto;
-    background: linear-gradient(rgb(160, 160, 170), rgba(59, 59, 65, 0.5));
+    background-color: grey;
 }
 
 .logoutBtn {
@@ -19,6 +18,8 @@
     border: none;
     background-color: black;
     font-size: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
     font-family: "Audiowide", sans-serif;
     color: white;
 }

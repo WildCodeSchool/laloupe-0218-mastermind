@@ -50,9 +50,9 @@ body {
 }
 
 body {
-    background-image: url('https://i.ytimg.com/vi/w8ndrYXBXT4/maxresdefault.jpg');
+    background-image: url('https://i.pinimg.com/originals/52/b2/f0/52b2f017cb70aead900d06a78e728d5e.jpg');
     background-repeat: no-repeat;
-    background-size: 1300px 800px;
+    background-size: cover;
 }
 
 @font-face {
@@ -66,3 +66,18 @@ body {
     margin-top: 10px;
     }
 
+@media (max-width: 1050px) {
+    body {
+        background-image: url('https://i.pinimg.com/originals/52/b2/f0/52b2f017cb70aead900d06a78e728d5e.jpg');
+        background-repeat: no-repeat;
+        background-size: 1050px 800px;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        background-image: url('https://i.pinimg.com/originals/52/b2/f0/52b2f017cb70aead900d06a78e728d5e.jpg');
+        background-repeat: no-repeat;
+        background-size: 380px 570px;
+    }
+}
