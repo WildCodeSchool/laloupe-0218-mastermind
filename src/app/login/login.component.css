@@ -62,11 +62,6 @@ button:hover {
 }
 
 @media (min-width : 1440px) {
-  .playAgainBtn {
-    position: absolute;
-    right: 41%;
-    top: 70%;
-  }
   .googlebutton {
     height: 150px;
     width: 150px;
@@ -75,6 +70,15 @@ button:hover {
   .playAgainBtn {
     position: absolute;
     right: 41%;
+    top: 50%;
+    color: black;
+  }
+}
+
+@media (min-width : 1920px) {
+  .playAgainBtn {
+    position: absolute;
+    right: 42.5%;
     top: 50%;
     color: black;
   }

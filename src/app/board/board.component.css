@@ -26,6 +26,11 @@
 @media (min-width:  1440px) {
   .board {  
       max-height: 760px; 
-    }
-    
+    }  
 }
+
+@media (min-width : 1920px) {
+    .board {  
+        max-height: 910px; 
+      }  
+  }
