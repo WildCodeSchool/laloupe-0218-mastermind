@@ -2,49 +2,49 @@ body {
   height: 100%;
   text-align: center;
   background: transparent;
-  }
-  
-  h1 {
+}
+
+h1 {
   color: white;
   font-size: 1.5em;
   font-family: "Audiowide", sans-serif;
   margin-top: 1.5em;
-  }
-  
- .googlebutton {
+}
+
+.googlebutton {
   height: 80px;
   width: 80px;
-  } 
-  
-  button {
+}
+
+button {
   border: none;
   background: transparent;
-  }
-  
-  button:hover {
+}
+
+button:hover {
   cursor: pointer;
-  }
-  
-  .rounded-circle {
+}
+
+.rounded-circle {
   margin-top: 4em;
   position: absolute;
   bottom: 200px;
   left: 50%;
   transform: translate(-50%);
-  }
+}
 
-  .logoutBtn {
-    position: absolute;
-    right: 5%;
-    top: 2.5%;
-    border-radius: 7px;
-    border: none;
-    background-color: rgb(47, 250, 250);
-    font-size: 1.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    font-family: "Audiowide", sans-serif;
-    color: black;
+.logoutBtn {
+  position: absolute;
+  right: 5%;
+  top: 2.5%;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(47, 250, 250);
+  font-size: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-family: "Audiowide", sans-serif;
+  color: black;
 }
 
 .playAgainBtn {
@@ -61,3 +61,10 @@ body {
   color: white;
 }
 
+@media (min-width : 1440px) {
+  .playAgainBtn {
+    position: absolute;
+    right: 41%;
+    top: 70%;
+  }
+}

@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
 
   playAgain() {
       const roomCollection = this.db.collection<Room>('rooms');
-  
+
       const snapshot = roomCollection.snapshotChanges().take(1).subscribe(snapshot1 => {
         const player = new Player();
         player.name = 'user' + Math.floor(Math.random() * 1000);
@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
         for (const snapshotItem of snapshot1) {
           const roomId = snapshotItem.payload.doc.id;
           const room = snapshotItem.payload.doc.data() as Room;
-  
+
           if (room.players.length === 1) {
             room.players.push(player);
             this.db.doc('rooms/' + roomId).update(JSON.parse(JSON.stringify(room)));
@@ -47,7 +47,7 @@ export class LoginComponent implements OnInit {
             return;
           }
         }
-  
+
         const newRoom = new Room();
         newRoom.combination = [];
         let i = 0;
@@ -65,4 +65,5 @@ export class LoginComponent implements OnInit {
       });
     }
   }
-}
+
+
