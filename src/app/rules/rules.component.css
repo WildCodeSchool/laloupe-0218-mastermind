@@ -28,8 +28,10 @@
         top: 2.5%;
         border-radius: 7px;
         border: none;
-        background-color: black;
+        background-color: rgb(47, 250, 250);
         font-size: 1.5em;
+        padding-left: 1em;
+        padding-right: 1em;
         font-family: "Audiowide", sans-serif;
-        color: white;
+        color: black;
     }

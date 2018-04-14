@@ -1,6 +1,7 @@
 # Page
 
-This game (still under construction) is aimed at being a 2 player version of the infamous Mastermind game.
+This game is aimed at being a 2 player version of the infamous and very retro Mastermind game.
+Once logged with your Gmail address, you will be relocated to the game room.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 

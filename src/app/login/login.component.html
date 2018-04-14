@@ -13,7 +13,7 @@
       </div>
     </div>
     <div *ngIf="authService.afAuth.authState | async as user">
-      <button class="bg-primary" (click)="playAgain()" aria-label="playAgain">Play again</button>
+      <button class="playAgainBtn" (click)="playAgain()" aria-label="playAgain">Play again</button>
     </div>
   </div>
   <div class="move">
