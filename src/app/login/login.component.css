@@ -58,7 +58,7 @@ button:hover {
   padding-left: 1.5em;
   padding-right: 1.5em;
   font-family: "Audiowide", sans-serif;
-  color: white;
+  color: black;
 }
 
 @media (min-width : 1440px) {
@@ -66,5 +66,16 @@ button:hover {
     position: absolute;
     right: 41%;
     top: 70%;
+  }
+  .googlebutton {
+    height: 150px;
+    width: 150px;
+    position: relative;
+  }
+  .playAgainBtn {
+    position: absolute;
+    right: 41%;
+    top: 50%;
+    color: black;
   }
 }
