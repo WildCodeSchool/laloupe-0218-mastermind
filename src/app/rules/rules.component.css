@@ -63,3 +63,17 @@
         top: 35%;
     }
 }
+
+@media (min-width: 280px) {
+    .rules {
+        max-width: 1000px;
+        position: absolute;
+        left: 7%;
+        top: 15%;
+    }
+    .goodluck {
+        position: absolute;
+        left: 42%;
+        top: 35%;
+    }
+}

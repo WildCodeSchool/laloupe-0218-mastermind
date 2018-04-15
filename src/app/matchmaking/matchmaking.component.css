@@ -6,3 +6,10 @@
     left: 20%;
     color: white;
     } 
+
+@media (max-width: 1290px) {
+    .waiting {
+        position: absolute;
+        left: 12%;
+        } 
+}
