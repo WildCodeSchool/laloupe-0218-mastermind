@@ -38,15 +38,14 @@
 
 @media (min-width: 1920px) {
     .rules {
-        max-width: 1000px;
         position: absolute;
-        left: 22%;
-        top: 15%;
+        margin-left: 15%;
+        
+ 
     }
     .goodluck {
         position: absolute;
-        left: 44%;
-        top: 35%;
+        margin-left: 3%;
     }
 }
 
