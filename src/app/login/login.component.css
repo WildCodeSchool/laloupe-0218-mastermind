@@ -14,6 +14,7 @@ h1 {
 .googlebutton {
   height: 80px;
   width: 80px;
+  margin-bottom: 100%;
 }
 
 button {
@@ -63,9 +64,7 @@ button:hover {
 
 @media (min-width : 1440px) {
   .googlebutton {
-    height: 150px;
-    width: 150px;
-    position: relative;
+    margin-bottom: 260%;
   }
   .playAgainBtn {
     position: absolute;
