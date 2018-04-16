@@ -14,7 +14,6 @@ h1 {
 .googlebutton {
   height: 80px;
   width: 80px;
-  margin-bottom: 100%;
 }
 
 button {
@@ -80,5 +79,11 @@ button:hover {
     right: 42.5%;
     top: 50%;
     color: black;
+  }
+}
+
+@media (min-width : 768px) {
+  .googlebutton {
+    margin-bottom: 20%;
   }
 }
