@@ -1,5 +1,15 @@
 .waiting {
     font-family: "Audiowide", sans-serif;
-    font-size: 2.8em;
-    margin-left: 150px;
+    font-size: 2.4em;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    color: white;
     } 
+
+@media (max-width: 1290px) {
+    .waiting {
+        position: absolute;
+        left: 12%;
+        } 
+}

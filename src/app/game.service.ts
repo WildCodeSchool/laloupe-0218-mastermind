@@ -17,7 +17,7 @@ export class GameService {
     this.roomId = roomId;
     this.db.doc<Room>('rooms/' + roomId).valueChanges().subscribe((room) => {
       this.room = room;
-      if (this.room.players.length > 1 && (this.room.players[0].won || this.room.players[1].won)) {
+      if (this.room.players.length > 1 && (this.room.players[0].won)) {
         if (this.room.players[0].name === this.authService.username && this.room.players[0].won) {
           alert('You won the match !');
           this.router.navigate(['']);
@@ -26,6 +26,15 @@ export class GameService {
           this.router.navigate(['']);
         }
       }
+      if  (this.room.players.length > 1 && (this.room.players[1].won)) {
+        if (this.room.players[0].name === this.authService.username && this.room.players[1].won) {
+          alert('You lost. Your opponent has been faster than you!');
+          this.router.navigate(['']);
+        } else {
+          alert('You won the match!');
+          this.router.navigate(['']);
+        }
+        }
     });
   }
 
